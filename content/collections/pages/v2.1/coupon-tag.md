@@ -25,9 +25,9 @@ This tag lets you check whether or not the customer has already redeemed a coupo
 This tag lets you redeem a coupon.
 
 ```handlebars
-{{ sc:cart:redeem }}
+{{ sc:coupon:redeem }}
   <input type="text" name="code">
-{{ /sc:cart:redeem }}
+{{ /sc:coupon:redeem }}
 ```
 
 ### Remove a coupon
