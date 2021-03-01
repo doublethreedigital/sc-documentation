@@ -34,7 +34,7 @@ This tag lets you redeem a coupon.
 This tag allows you remove a redeemed coupon from the cart.
 
 ```handlebars
-{{ sc:cart:remove }}
+{{ sc:coupon:remove }}
   <button type="submit">Remove coupon</button>
-{{ /sc:cart:remove }}
+{{ /sc:coupon:remove }}
 ```
