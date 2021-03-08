@@ -187,7 +187,7 @@ When you want to use an off-site gateway, you can't use the standard `{{ sc:chec
 Below is an example of the off-site gateway checkout tag for Mollie. You can obviously change the gateway name and the redirect to work for you.
 
 ```handlebars
-{{ sc:checkout:mollie redirect="/thanks" }}
+{{ sc:checkout:mollie redirect="/thanks" error_redirect="/payment-error" }}
 ```
 
 After the customer completes payment on the off-site gateway they will be redirected back to your store's site. Either to the redirect URL provided or to your store's homepage.
