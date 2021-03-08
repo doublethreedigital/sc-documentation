@@ -2,7 +2,6 @@
 id: 6f0adfc8-2a71-4ff8-ac7c-50560ecfd962
 origin: bc911ab7-2954-48fc-ab01-fd889a39d812
 ---
-
 With the gateway tag, you can loop through and use a specific gateway. This tag is commonly used on checkout pages to display payment forms.
 
 This page has documentation on the tag itself but if you're looking for docs on displaying payment forms, head over to the [Gateway docs](/v2.2/gateways#templating).
@@ -28,12 +27,7 @@ This tag lets you get a particular gateway and its information, where `stripe` i
 ```handlebars
 {{ sc:gateways:stripe }}
     <h2>Payment with {{ display }}</h2>
-
-    <input name="card_number" pladeholder="Card number">
-    <input name="expiry" pladeholder="Card expiry">
-    <input name="cvc" pladeholder="CVC">
-
-    <button type="submit">Pay</button>
+	<!-- Whatever else you need to do -->
 {{ /sc:gateways:stripe }}
 ```
 
