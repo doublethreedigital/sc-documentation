@@ -2,6 +2,7 @@
 title: 'Cart Cleanup'
 parent: 3edefcbb-7318-4dfe-97f4-92b5ec997e5a
 id: 4ffbe466-5813-43ed-b5b5-cff9251838d4
+published: false
 ---
 Simple Commerce provides a command, which can be setup to run automatically, that will delete any unpaid orders older than 14 days.
 
