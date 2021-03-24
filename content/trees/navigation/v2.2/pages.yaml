@@ -44,10 +44,10 @@ tree:
   -
     title: 'Knowledge Base'
     children:
-      -
-        entry: 3cbcad0c-d018-4bc6-95da-d4bf72428858
-      -
-        entry: c008b020-67fd-4f23-82c3-bb01e7b13b96
+      # -
+      #   entry: 3cbcad0c-d018-4bc6-95da-d4bf72428858
+      # -
+      #   entry: c008b020-67fd-4f23-82c3-bb01e7b13b96
       -
         entry: ff5ff001-6490-4c64-93db-f927a033074a
       -
