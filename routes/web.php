@@ -6,11 +6,12 @@ use Illuminate\Support\Facades\Route;
 use Statamic\Facades\Site;
 use Statamic\Statamic;
 
+Route::statamic('/', 'home');
+
 Statamic::booted(function () {
     Route::name('latest-version.')->group(function () {
         $latestVersion = Site::get('v2.2');
 
-        Route::redirect('/', $latestVersion->url());
         Route::redirect('/home', $latestVersion->url());
         Route::redirect('/installation', $latestVersion->url().'/installation');
         Route::redirect('/configuring', $latestVersion->url().'/configuring');
