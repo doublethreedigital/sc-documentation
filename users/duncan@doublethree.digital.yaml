@@ -5,8 +5,8 @@ password_hash: $2y$10$.ksfLkiRTDyjTn8PxVVRjOU2gYrqtgtgGTvcr0QJCa9hji6L4iG5m
 preferences:
   favorites:
     -
-      name: 'Pages ‹ Collections'
-      url: collections/pages
+      name: 'Docs ‹ Collections'
+      url: collections/docs
     -
-      name: 'Pages ‹ Navigation'
-      url: navigation/pages
+      name: 'Docs ‹ Navigation'
+      url: navigation/docs

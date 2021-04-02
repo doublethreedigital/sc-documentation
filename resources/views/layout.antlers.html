@@ -124,7 +124,7 @@
                 <div class="md:{{ view:page_width ?? 'max-w-5xl' }} mx-auto py-8 flex relative mb-12">
                     <aside class="md:max-w-xs md:mr-16" :class="{ 'fixed top-0 right-0 bg-white z-50 p-4' : open, 'hidden md:block': !open }">
                         <ul class="mt-6 pb-6 sm:border-r sm:border-gray-100 pr-8">
-                            {{ nav:pages }}
+                            {{ nav:docs }}
                                 {{ if !url }}
                                     <li
                                         class="font-semibold text-sc-dark-blue uppercase text-sm mb-2 mt-10"
@@ -142,7 +142,7 @@
                                 {{ else }}
                                     <li class="mb-2 text-gray-800 hover:text-sc-dark-light {{ if is_current }} font-semibold {{ /if }}"><a href="{{ url }}">{{ title }}</a></li>
                                 {{ /if }}
-                            {{ /nav:pages }}
+                            {{ /nav:docs }}
                         </ul>
                     </aside>
 

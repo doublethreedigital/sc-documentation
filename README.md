@@ -8,7 +8,7 @@ This repository contains the source code & content for the Simple Commerce docum
 
 If you wish to contribute to the documentation, either for a typo or to fix a small design bug, please submit a pull request. All contributions are welcome (I'm only one person after all!).
 
-The content of the documentation lives in `content/collections/pages`. The `pages` directory has a sub-directory for each version of Simple Commerce. When contributing, please update the latest version of the documentation.
+The content of the documentation lives in `content/collections/docs`. The `docs` directory has a sub-directory for each version of Simple Commerce. When contributing, please update the latest version of the documentation.
 
 The front-end of the site lives in the `resources/views` directory. The site uses Tailwind CSS and Alpine.js.
 
