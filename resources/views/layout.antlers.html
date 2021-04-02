@@ -88,13 +88,17 @@
                     </a>
 
                     <form class="max-w-sm hidden md:block">
-                        <input
-                            id="search-box"
-                            type="search"
-                            class="w-64 rounded-full px-4 py-2 focus:outline-none border-2 border-transparent focus:border-sc-dark-light"
-                            placeholder="Search..."
-                            oninput="doStuff(value)"
-                        >
+                        <div class="rounded-full px-4 py-2 border-2 border-transparent focus:border-sc-dark-light flex items-center bg-white" style="width: 18rem;">
+                            <input
+                                id="search-box"
+                                type="search"
+                                class="focus:outline-none border-r border-gray-100"
+                                placeholder="Search..."
+                                oninput="doStuff(value)"
+                            >
+
+                            {{ partial:version_dropdown }}
+                        </div>
                     </form>
 
                     <button class="focus:outline-none md:hidden" @click="open = !open">
@@ -119,8 +123,6 @@
             {{ else }}
                 <div class="md:{{ view:page_width ?? 'max-w-5xl' }} mx-auto py-8 flex relative mb-12">
                     <aside class="md:max-w-xs md:mr-16" :class="{ 'fixed top-0 right-0 bg-white z-50 p-4' : open, 'hidden md:block': !open }">
-                        {{ partial:version_dropdown }}
-
                         <ul class="mt-6 pb-6 sm:border-r sm:border-gray-100 pr-8">
                             {{ nav:pages }}
                                 {{ if !url }}
