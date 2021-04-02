@@ -56,30 +56,9 @@
         <meta name="theme-color" content="#041B34">
 
         <!-- Docsearch -->
-        <meta name="docsearch:version" content="{{ site:name ?? 'v2.2' }}" />
-</head>
+        <meta name="docsearch:version" content="{{ current_version_site:name }}" />
+    </head>
     <body>
-        <script>
-            function doStuff(query) {
-                if (query == '' || query.length <= 3) {
-                    return
-                }
-
-                let data = new URLSearchParams();
-                data.append(`searchQuery`, query);
-                data.append(`_token`, `{{ csrf_token }}`);
-
-                fetch('/search-feedback', {
-                    method: 'POST',
-                    body: data,
-                }).then((response) => {
-                    // Schweet...
-                }).catch((error) => {
-                    // No biggy.
-                })
-            }
-        </script>
-
         <div x-data="{ open: false }" x-cloak>
             <header class="bg-sc-dark-blue px-6 md:px-0">
                 <div class="{{ view:page_width ?? 'max-w-5xl' }} mx-auto py-4 flex items-center justify-between">
@@ -94,7 +73,6 @@
                                 type="search"
                                 class="focus:outline-none border-r border-gray-100"
                                 placeholder="Search..."
-                                oninput="doStuff(value)"
                             >
 
                             {{ partial:version_dropdown }}
@@ -109,7 +87,7 @@
                 </div>
             </header>
 
-            <div class="bg-gray-900 opacity-75 fixed top-0 right-0 left-0 bottom-0 fixed z-20"  :class="{ 'hidden' : !open }"></div>
+            <div class="bg-gray-900 opacity-75 fixed top-0 right-0 left-0 bottom-0 z-20"  :class="{ 'hidden' : !open }"></div>
             <div class="fixed top-0 left-0 pl-6 pt-6 z-30" :class="{ 'hidden' : !open }">
                 <button class="bg-white rounded-full w-10 h-10 flex items-center justify-center border-2 border-sc-dark-light focus:outline-none" @click="open = !open">
                     <svg class="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -140,7 +118,7 @@
 
                                     <span class="block mb-6"></span>
                                 {{ else }}
-                                    <li class="mb-2 text-gray-800 hover:text-sc-dark-light {{ if is_current }} font-semibold {{ /if }}"><a href="{{ url }}">{{ title }}</a></li>
+                                    <li class="mb-2 text-gray-800 hover:text-sc-dark-light hover:underline {{ if is_current }} font-semibold {{ /if }}"><a href="{{ url }}">{{ title }}</a></li>
                                 {{ /if }}
                             {{ /nav:docs }}
                         </ul>
@@ -169,7 +147,7 @@
             docsearch({
                 algoliaOptions: {
                     hitsPerPage: 8,
-                    facetFilters: ["version:{{ site:name ?? 'v2.2' }}"]
+                    facetFilters: ["version:{{ current_version_site:name }}"]
                 },
                 apiKey: '3c4b0eae8c5977dce91d83c1463c425e',
                 indexName: 'doublethree',

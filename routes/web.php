@@ -1,12 +1,9 @@
 <?php
 
 use App\Http\Controllers\ChangelogController;
-use App\Http\Controllers\SearchFeedbackController;
 use Illuminate\Support\Facades\Route;
 use Statamic\Facades\Site;
 use Statamic\Statamic;
-
-Route::statamic('/', 'home');
 
 Statamic::booted(function () {
     Route::name('latest-version.')->group(function () {
@@ -32,11 +29,6 @@ Statamic::booted(function () {
         });
     }
 });
-
-Route::redirect('/github', 'https://github.com/doublethreedigital/simple-commerce');
-Route::redirect('/discord', 'https://github.com/doublethreedigital/simple-commerce/discussions');
-
-Route::post('/search-feedback', [SearchFeedbackController::class, 'store']);
 
 Route::statamic('/sitemap.xml', 'sitemap', [
     'layout' => null,

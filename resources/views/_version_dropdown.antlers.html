@@ -1,5 +1,5 @@
 <div
-    x-data="{ versionDropdown: false, version: '{{ site:name ?? 'v2.2' }}' }"
+    x-data="{ versionDropdown: false, version: '{{ current_version_site:name }}' }"
     x-cloak
     class="relative inline-block text-left"
     @click.away="versionDropdown = false"

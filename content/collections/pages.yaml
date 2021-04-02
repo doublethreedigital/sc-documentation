@@ -1,0 +1,24 @@
+title: Pages
+sites:
+  - marketing
+template: default
+layout: layout
+revisions: false
+route: '/{parent_uri}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+structure:
+  root: true
+  tree:
+    marketing:
+      -
+        entry: 240680dc-bee0-41a6-8eef-d0a7b73d39ce
+      -
+        entry: 6d6d2b34-35d8-442c-ad0b-c60e990ffcb9
+      -
+        entry: 77440f83-a70a-4dd9-b6bc-2cdcd97cb588
+        children:
+          -
+            entry: 7cb35b34-0ed5-4c54-a3e7-bea08db467b4
