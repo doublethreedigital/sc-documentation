@@ -34,9 +34,7 @@ page_width: 'max-w-6xl'
             Here's what comes out of the box
         </p>
         <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-            Everything you need for small-medium sized e-commerce sites, all in one package.
-
-            <!-- Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla. -->
+            Everything you need for small to medium sized e-commerce stores, all in a Statamic add-on.
         </p>
         <div class="mt-12">
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -55,7 +53,7 @@ page_width: 'max-w-6xl'
                             <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Product Variants</h3>
 
                             <p class="mt-5 text-base text-gray-500">
-                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                Whether it’s for different colours, t-shirt sizes or whatever, product variants are there to make it easy.
                             </p>
                         </div>
                     </div>
@@ -76,7 +74,7 @@ page_width: 'max-w-6xl'
                             <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Supports Stripe & Mollie</h3>
 
                             <p class="mt-5 text-base text-gray-500">
-                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                First-party support for two of the major players when it comes to the world of payments.
                             </p>
                         </div>
                     </div>
@@ -97,7 +95,7 @@ page_width: 'max-w-6xl'
                             <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Compatible with multi-site</h3>
 
                             <p class="mt-5 text-base text-gray-500">
-                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                With multisite in Simple Commerce, you can use different currencies and shipping methods per site.
                             </p>
                         </div>
                     </div>
@@ -119,18 +117,17 @@ page_width: 'max-w-6xl'
                             <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Flexible Shipping</h3>
 
                             <p class="mt-5 text-base text-gray-500">
-                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                Need to make different shipping methods available based on the customers’ address? That’s totally possible.
                             </p>
                         </div>
                     </div>
                 </div>
-
+<!--
                 <div class="pt-6">
                     <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                         <div class="-mt-6">
                             <div>
                                 <span class="bg-gradient-to-t from-sc-dark-blue inline-flex items-center justify-center p-3 rounded-md shadow-lg to-sc-dark-light">
-                                    <!-- Heroicon name: outline/server -->
                                     <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                                     </svg>
@@ -144,7 +141,7 @@ page_width: 'max-w-6xl'
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="pt-6">
                     <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
@@ -161,7 +158,7 @@ page_width: 'max-w-6xl'
                             <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Extendable</h3>
 
                             <p class="mt-5 text-base text-gray-500">
-                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                From the ground up, Simple Commerce is built to be extended. From events to the ability to override the calculator.
                             </p>
                         </div>
                     </div>
@@ -179,28 +176,28 @@ page_width: 'max-w-6xl'
                 <template x-if="current === 'antlers'">
                     <img src="/img/cart-code.png" alt="All it takes to display your customer's line items.">
                 </template>
-                <template x-if="current === 'blueprints'">
-                    <img src="/img/cart-code.png" alt="All it takes to display your customer's line items.">
+                <template x-if="current === 'entries'">
+                    <img src="/img/collections.png" alt="All it takes to display your customer's line items.">
                 </template>
-                <template x-if="current === 'something'">
-                    <img src="/img/cart-code.png" alt="All it takes to display your customer's line items.">
+                <template x-if="current === 'blueprints'">
+                    <img src="/img/blueprints.png" alt="All it takes to display your customer's line items.">
                 </template>
             </div>
             <div class="flex-1">
                 <div class="flex flex-col justify-between h-full">
                     <button class="text-left py-4 px-4 rounded focus:outline-none mb-2" :class="{ 'bg-sc-dark-light' : current === 'antlers' }" @click="current = 'antlers'">
-                        <h2 class="font-bold text-white mb-1">Integrates directly with Antlers</h2>
-                        <p class="text-white">You love Antlers, so does Simple Commerce. There's nothing that can't be achieved when you have Simple Commerce's powerful tags.</p>
+                        <h2 class="font-bold text-white mb-1">Integrates perfectly with Antlers</h2>
+                        <p class="text-white">Everyone loves Antlers, right? I sure do. Simple Commerce provides its own tags to let you add products to the cart, take payment etc. It’s almost magic.</p>
+                    </button>
+
+                    <button class="text-left py-4 px-4 rounded focus:outline-none mb-2" :class="{ 'bg-sc-dark-light' : current === 'entries' }" @click="current = 'entries'">
+                        <h2 class="font-bold text-white mb-1">Everything’s just an entry</h2>
+                        <p class="text-white">You know how you love flat files and entries for your content? Well, with Simple Commerce, your products, orders and coupons are all entries. </p>
                     </button>
 
                     <button class="text-left py-4 px-4 rounded focus:outline-none mb-2" :class="{ 'bg-sc-dark-light' : current === 'blueprints' }" @click="current = 'blueprints'">
-                        <h2 class="font-bold text-white mb-1">Flexibility over your blueprints</h2>
-                        <p class="text-white">You love Antlers, so does Simple Commerce. There's nothing that can't be achieved when you have Simple Commerce's powerful tags.</p>
-                    </button>
-
-                    <button class="text-left py-4 px-4 rounded focus:outline-none mb-2" :class="{ 'bg-sc-dark-light' : current === 'something' }" @click="current = 'something'">
-                        <h2 class="font-bold text-white mb-1">Something else</h2>
-                        <p class="text-white">You love Antlers, so does Simple Commerce. There's nothing that can't be achieved when you have Simple Commerce's powerful tags.</p>
+                        <h2 class="font-bold text-white mb-1">Flexible blueprints</h2>
+                        <p class="text-white">There’s no limitations when it comes to blueprints. Just create the fields you wanna use and use them, it’s your site after all. No-one else should define your schema for you.</p>
                     </button>
                 </div>
             </div>
@@ -214,7 +211,7 @@ page_width: 'max-w-6xl'
         <div class="py-12 flex items-center">
             <div class="flex-1">
                 <h2 class="text-2xl mb-2 font-semibold">You're not the only one.</h2>
-                <p class="text-lg">Plenty of other Statamic developers have chosen to build their ecommerce sites with Simple Commerce.</p>
+                <p class="text-lg">Plenty of other, well-respected Statamic developers have decided to build their stores with Simple Commerce.</p>
             </div>
             <div class="flex-1">
                 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Working on my first <a href="https://twitter.com/statamic?ref_src=twsrc%5Etfw">@statamic</a> <a href="https://twitter.com/hashtag/ecommerce?src=hash&amp;ref_src=twsrc%5Etfw">#ecommerce</a> site powered by the amazing Simple Commerce add-on by <a href="https://twitter.com/damcclean?ref_src=twsrc%5Etfw">@damcclean</a>. Highly recommend! Great product and support 💪🏻</p>&mdash; Michiel 🌖 (@vlijmscherp) <a href="https://twitter.com/vlijmscherp/status/1369368445784064000?ref_src=twsrc%5Etfw">March 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -226,7 +223,8 @@ page_width: 'max-w-6xl'
 <!-- CTA -->
 <section class="bg-sc-dark-blue border-b">
     <div class="max-w-6xl mx-auto py-16">
-        <h2 class="text-4xl text-center text-white mb-8 font-bold">What are you waiting for?</h2>
+        <h2 class="text-4xl text-center text-white mb-2 font-bold">What else do I need to know?</h2>
+        <p class="text-lg text-center text-white mb-8">You can try Simple Commerce in development for as long as you like. And when you put your site live, you’ll need to buy a $99 license.</p>
 
         <div class="flex items-center justify-center space-x-6">
             <a href="/installation" class="bg-sc-dark-light border-2 border-transparent hover:bg-sc-dark-blue hover:border-sc-dark-light px-6 py-3 text-white font-semibold rounded focus:outline-none">
