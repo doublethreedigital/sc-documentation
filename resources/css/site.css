@@ -51,7 +51,7 @@
 }
 
 .prose a:hover {
-    @apply text-sc-light-blue;
+    @apply text-sc-dark-light;
 }
 
 .prose a code {
@@ -63,7 +63,7 @@
 }
 
 .prose blockquote {
-    @apply border-l-4 border-sc-light-blue bg-sc-dark-blue text-white not-italic font-medium;
+    @apply border-l-4 border-sc-dark-light bg-sc-dark-blue text-white not-italic font-medium;
 }
 
 .prose blockquote p {
