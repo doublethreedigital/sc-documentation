@@ -19,7 +19,7 @@ Statamic::booted(function () {
         Route::redirect('/email', $latestVersion->url().'/email');
         Route::redirect('/how-it-works', $latestVersion->url().'/how-it-works');
         Route::redirect('/knowledge-base/version-control-strategies', $latestVersion->url().'/knowledge-base/version-control-strategies');
-        Route::redirect('/extending', $latestVersion->url().'/how-it-works');
+        Route::redirect('/extending', $latestVersion->url().'/knowledge-base/extending');
         Route::redirect('/product-variants', $latestVersion->url().'/product-variants');
     });
 
