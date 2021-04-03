@@ -5,7 +5,7 @@ module.exports = {
         content: [
             './app/**/*.php',
             './app/**/**/*.php',
-            './resources/**/*.antlers.html',
+            './resources/views/**/*.antlers.html',
             './content/**/*.md'
         ]
     },
