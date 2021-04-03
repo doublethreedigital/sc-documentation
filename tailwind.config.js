@@ -6,7 +6,6 @@ module.exports = {
             './app/**/*.php',
             './app/**/**/*.php',
             './resources/**/*.antlers.html',
-            './resources/**/*/*.antlers.html',
             './content/**/*.md'
         ]
     },
