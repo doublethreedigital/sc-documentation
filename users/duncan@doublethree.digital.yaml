@@ -10,3 +10,6 @@ preferences:
     -
       name: 'Docs ‹ Navigation'
       url: navigation/docs
+  collections:
+    docs:
+      after_save: continue_editing

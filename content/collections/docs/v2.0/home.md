@@ -3,27 +3,24 @@ title: 'About Simple Commerce'
 intro: 'Simple Commerce is a simple e-commerce addon for Statamic. It allows you to enjoy the benefits of flat files while giving you the power you need for small-medium sized e-commerce websites.'
 id: home
 ---
-We built Simple Commerce to feel as native as possible to Statamic. We've adopted everything from the flat file approach to not being opinionated over what your front-end looks like.
+Welcome to the documentation site for Simple Commerce! 
 
-**But why flat files?** Because they're awesome! Besides the fact that you can [version control them](/knowledge-base/version-control-strategies), it's also a big plus for security as there's no way for hackers to use MySQL Injection to fetch important data from your system.
+The aim is to keep it up-to-date with new features as soon as they're released but ultimatley no one's perfect and there's going to be some stuff missing
 
-**And by the way, you have full control over content modeling!** You heard it right, basically the only requirement you need if to have a price field on your products and you're all set.
+## Contributing
 
-**Simple Commerce also has first-party support for popular gateways...** Right now, Stripe and Mollie are officially supported. If you need one that we don't support, it's easy to build your own gateway.
+If you find any issues with the docs, like a typo, feel free to submit a pull request on the [documentation repo](https://github.com/doublethreedigital/sc-docs.doublethree.digital). There's a link to 'Improve this page on GitHub' on every page on the docs site!
 
-[Learn more about how it works](/how-it-works)
+Also, if there's any features or things you'd like to see documented, create an issue or attempt it yourself with a PR.
 
-## Limitations
-Simple Commerce is pretty lightweight (hence the name). This means it doesn't have as much functionality as likes of Shopify or Craft Commerce.
+## Versioning
 
-* No support for multiple tax rates - at the moment, you can only assign a single tax rate per site.
+The documentation site is split between different 'Statamic sites', one for each version (and one just for the marketing pages).
 
-* No first party shipping methods, you have to [create your own](/shipping) per store.
+This allows us to add documentation for features that come out in certain releases.
 
-* No reporting functionality (we have it on our roadmap for the future though!)
+You can switch between the version you're viewing docs for in the top right, inside the search bar.
 
-## Licensing and Support
+## Support
 
-Simple Commerce is commercial software, so you'll need to purchase a license from the Statamic Marketplace before you can use it in production environments.
-
-If you have any issues, ask a question on [GitHub Discussions](https://github.com/doublethreedigital/simple-commerce/discussions) or [send an email](mailto:hello@doublethree.digital).
+If you're looking for help with something and can't find your answer here, create an issue on the Simple Commerce repo or [send me (Duncan) an email](mailto:hello@doublethree.digital).

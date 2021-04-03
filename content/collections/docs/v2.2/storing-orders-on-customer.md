@@ -2,7 +2,6 @@
 title: 'Storing Orders on Customer'
 parent: 3edefcbb-7318-4dfe-97f4-92b5ec997e5a
 id: 9f972e3e-2515-4de9-b7f3-803546245ec0
-published: false
 ---
 Sometimes you may run into a situation where you'd like to keep track of a customer's orders on their customer entry, instead of just attaching the customers from the order side.
 

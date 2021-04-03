@@ -1,52 +1,26 @@
 ---
+title: Introduction
 id: a7e9819c-ec55-4f37-b2c5-f2ec11ffc514
 origin: ce8337dc-8a1f-4caa-b99c-b67215c00149
 ---
-From the very start, Simple Commerce has been built with a mission to feel as native to Statamic as possible. 
+Welcome to the documentation site for Simple Commerce! 
 
-It uses markdown files for your products & orders, it doesn't force you away from Antlers and it doesn't tell you what your content schema should look like. **It's all up to you!**
+The aim is to keep it up-to-date with new features as soon as they're released but ultimatley no one's perfect and there's going to be some stuff missing
 
-## How does it all work?
+## Contributing
 
-### Content
+If you find any issues with the docs, like a typo, feel free to submit a pull request on the [documentation repo](https://github.com/doublethreedigital/sc-docs.doublethree.digital). There's a link to 'Improve this page on GitHub' on every page on the docs site!
 
-Under the hood, all of your orders, products, coupons are just normal Statamic entries. This also gives you the flexibility to update your blueprint without any loop holes.
+Also, if there's any features or things you'd like to see documented, create an issue or attempt it yourself with a PR.
 
-The great thing about your products being entries is that you can loop through them the same way you can with any other collection:
+## Versioning
 
-```handlebars
-{{ collection:products }}
-  <h2>{{ title }}</h2>
-  <p>{{ price }}</p>
-{{ /collection:products }}
-```
+The documentation site is split between different 'Statamic sites', one for each version (and one just for the marketing pages).
 
-### Templating
+This allows us to add documentation for features that come out in certain releases.
 
-Antlers is Statamic's templating language. Personally, I ❤️ it! Simple Commerce ships with its own set of [Antler Tags](/v2.2/tags).
+You can switch between the version you're viewing docs for in the top right, inside the search bar.
 
-Here's example usage for the `{{ sc:cart:addItem }}` tag which generates a form to add a product to the cart. This is what the Antlers code looks like:
+## Support
 
-```handlebars
-{{ sc:cart:addItem }}
-    <input type="hidden" name="product" value="{{ id }}">
-    <input type="hidden" name="quantity" value="1">
-    <button class="button-primary">Add to Cart</button>
-{{ /sc:cart:addItem }}
-```
-
-And here's what it outputs:
-
-```html
-<form action="/!/simple-commerce/cart-items" method="post">
-    <input type="hidden" name="product" value="84b28c73-3a04-478f-9447-68df026c44fe">
-    <input type="hidden" name="quantity" value="1">
-    <button class="button-primary">Add to Cart</button>
-</form>
-```
-
-## And the details...
-
-For each production site you launch, you need to buy a $99 license which is purchasable from the Statamic Marketplace.
-
-If you've got any questions, [drop me an email](mailto:hello@doublethree.digital). And for any bugs, [create a GitHub issue](https://github.com/doublethreedigital/simple-commerce/issues/new?assignees=&labels=&template=bug_report.md).
+If you're looking for help with something and can't find your answer here, create an issue on the Simple Commerce repo or [send me (Duncan) an email](mailto:hello@doublethree.digital).
