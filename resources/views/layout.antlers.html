@@ -84,7 +84,7 @@
                     </form>
 
                     {{ if view:marketing_mode }}
-                        <div>
+                        <div class="sm:hidden">
                             <a class="text-white text-lg font-medium text-right" href="/v2.2">Go to Docs</a>
                         </div>
                     {{ else }}
@@ -117,16 +117,16 @@
 
                 <div class="md:{{ view:page_width ?? 'max-w-5xl' }} mx-auto py-8 flex relative mb-12">
                     <aside class="md:max-w-xs md:mr-16" :class="{ 'fixed top-0 right-0 bg-white z-50 p-4' : open, 'hidden md:block': !open }">
-                        <div class="relative overflow-y-scroll">
+                        <div class="relative">
                             <ul class="mt-6 pb-6 sm:border-r sm:border-gray-100 pr-8">
                                 {{ nav:docs }}
                                     {{ if !url }}
                                         <li
-                                            class="font-semibold text-sc-dark-blue uppercase text-sm mb-2 mt-10"
+                                            class="font-semibold text-sc-dark-blue text-sm mb-2 mt-10"
                                         >{{ title }}</li>
 
                                         {{ children }}
-                                            <li class="mb-1">
+                                            <li class="mb-1 {{ if is_current }} current-nav-item {{ /if }}">
                                                 <a class="text-gray-700 hover:text-sc-dark-light hover:underline {{ if is_current }} font-semibold {{ /if }}" href="{{ url }}">
                                                     {{ title }}
                                                 </a>
@@ -135,7 +135,7 @@
 
                                         <span class="block mb-6"></span>
                                     {{ else }}
-                                        <li class="mb-2 text-gray-800 hover:text-sc-dark-light hover:underline {{ if is_current }} font-semibold {{ /if }}"><a href="{{ url }}">{{ title }}</a></li>
+                                        <li class="mb-2 text-gray-800 hover:text-sc-dark-light hover:underline {{ if is_current }} current-nav-item font-semibold {{ /if }}"><a href="{{ url }}">{{ title }}</a></li>
                                     {{ /if }}
                                 {{ /nav:docs }}
                             </ul>

@@ -25,7 +25,7 @@
 	@apply bg-gray-200 font-mono text-sm p-1 font-normal;
 }
 
-.prose ul {
+.prose li, .current-nav-item {
     list-style-image: url('/img/arrowhead-solid.svg');
 }
 
@@ -35,7 +35,7 @@
 
 @screen md {
     .prose ul li {
-        @apply -ml-1 pl-1;
+        @apply ml-4 pl-1;
     }
 }
 
