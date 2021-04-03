@@ -1,13 +1,13 @@
 {{ xml_header }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-{{ collection:pages site:is="v2.2" }}
+{{ collection:docs site:is="v2.2" }}
     <url>
         <loc>{{ config:app.url }}{{ if parent:slug !== 'home' && slug !== 'home' }}/{{ parent:slug }}{{ /if }}/{{ slug }}</loc>
         <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>{{ if slug === 'home' }}1.0{{ elseif parent:slug === 'home' }}0.9{{ else }}0.8{{ /if }}</priority>
     </url>
-{{ /collection:pages }}
+{{ /collection:docs }}
 
 </urlset>

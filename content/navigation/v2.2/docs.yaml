@@ -7,6 +7,8 @@ tree:
     title: Changelog
     url: /v2.2/changelog
   -
+    entry: 3edefcbb-7318-4dfe-97f4-92b5ec997e5a
+  -
     title: 'Getting Started'
     children:
       -
@@ -41,16 +43,14 @@ tree:
         entry: da93bfdd-0207-4b88-85da-bd8a54a36d07
       -
         entry: 7ddd8223-af98-4463-9b37-463a3d61d53b
-      -
-        entry: 5ca7272b-da30-4033-a2f9-d1864ca5311e
   -
-    title: 'Knowledge Base'
+    title: Extending
     children:
       -
-        entry: 3cbcad0c-d018-4bc6-95da-d4bf72428858
+        entry: 5ca7272b-da30-4033-a2f9-d1864ca5311e
       -
-        entry: c008b020-67fd-4f23-82c3-bb01e7b13b96
+        entry: c6249284-fe49-4018-9dfe-a924fd42bdfc
       -
-        entry: ff5ff001-6490-4c64-93db-f927a033074a
+        entry: 3ed91ad0-3ea1-4016-bb55-2f7e782effd9
       -
-        entry: 8ecf4a04-6f73-484b-bf23-ff9c8b7ab065
+        entry: ff63b57e-53c8-42bd-b91c-d65909abefdd

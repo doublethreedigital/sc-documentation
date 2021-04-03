@@ -25,7 +25,7 @@ return [
     |
     */
 
-    'start_page' => 'collections/pages',
+    'start_page' => 'collections/docs',
 
     /*
     |--------------------------------------------------------------------------

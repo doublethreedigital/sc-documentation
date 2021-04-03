@@ -1,35 +1,30 @@
-<div x-data="{ versionDropdown: false, version: '{{ site:name ?? 'v2.2' }}' }" x-cloak class="relative inline-block text-left" @click.away="versionDropdown = false">
+<div
+    x-data="{ versionDropdown: false, version: '{{ current_version_site:name }}' }"
+    x-cloak
+    class="relative inline-block text-left"
+    @click.away="versionDropdown = false"
+>
     <div>
-        <span class="rounded-md shadow-sm">
+        <span>
             <button type="button"
-                class="inline-flex justify-center w-full text-sc rounded-md border border-gray-300 px-4 py-2 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
+                class="inline-flex justify-center w-full text-sc px-3 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
                 aria-haspopup="true"
                 aria-expanded="true"
                 @click="versionDropdown = !versionDropdown"
             >
                 <!-- Version -->
                 <span x-text="version"></span>
-                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <svg class="-mr-1 ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
             </button>
         </span>
     </div>
 
-    <!--
-    Dropdown panel, show/hide based on dropdown state.
-
-    Entering: "transition ease-out duration-100"
-      From: "transform opacity-0 scale-95"
-      To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-      From: "transform opacity-100 scale-100"
-      To: "transform opacity-0 scale-95"
-  -->
     <div
         x-show="versionDropdown"
         :class="{ 'transition ease-out duration-100' : versionDropdown, 'transition ease-in duration-75' : !versionDropdown }"
-        class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg"
+        class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg z-50"
     >
         <div class="rounded-md bg-white shadow-xs">
             <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">

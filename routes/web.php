@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\ChangelogController;
-use App\Http\Controllers\SearchFeedbackController;
 use Illuminate\Support\Facades\Route;
 use Statamic\Facades\Site;
 use Statamic\Statamic;
@@ -10,7 +9,6 @@ Statamic::booted(function () {
     Route::name('latest-version.')->group(function () {
         $latestVersion = Site::get('v2.2');
 
-        Route::redirect('/', $latestVersion->url());
         Route::redirect('/home', $latestVersion->url());
         Route::redirect('/installation', $latestVersion->url().'/installation');
         Route::redirect('/configuring', $latestVersion->url().'/configuring');
@@ -21,8 +19,10 @@ Statamic::booted(function () {
         Route::redirect('/email', $latestVersion->url().'/email');
         Route::redirect('/how-it-works', $latestVersion->url().'/how-it-works');
         Route::redirect('/knowledge-base/version-control-strategies', $latestVersion->url().'/knowledge-base/version-control-strategies');
-        Route::redirect('/extending', $latestVersion->url().'/how-it-works');
+        Route::redirect('/extending', $latestVersion->url().'/knowledge-base/extending');
         Route::redirect('/product-variants', $latestVersion->url().'/product-variants');
+        Route::redirect('/upgrade-guide', $latestVersion->url().'/update-guide');
+        Route::redirect('/coupons', $latestVersion->url().'/coupons');
     });
 
     foreach (Site::all() as $site) {
@@ -31,11 +31,6 @@ Statamic::booted(function () {
         });
     }
 });
-
-Route::redirect('/github', 'https://github.com/doublethreedigital/simple-commerce');
-Route::redirect('/discord', 'https://github.com/doublethreedigital/simple-commerce/discussions');
-
-Route::post('/search-feedback', [SearchFeedbackController::class, 'store']);
 
 Route::statamic('/sitemap.xml', 'sitemap', [
     'layout' => null,

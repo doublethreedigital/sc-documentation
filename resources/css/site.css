@@ -25,7 +25,7 @@
 	@apply bg-gray-200 font-mono text-sm p-1 font-normal;
 }
 
-.prose ul {
+.prose li, .current-nav-item {
     list-style-image: url('/img/arrowhead-solid.svg');
 }
 
@@ -35,7 +35,7 @@
 
 @screen md {
     .prose ul li {
-        @apply -ml-1 pl-1;
+        @apply ml-4 pl-1;
     }
 }
 
@@ -63,7 +63,7 @@
 }
 
 .prose blockquote {
-    @apply border-l-4 border-sc-dark-light bg-sc-dark-blue text-white not-italic font-medium;
+    @apply border-l-4 border-sc-dark-light not-italic font-medium;
 }
 
 .prose blockquote p {
@@ -71,11 +71,7 @@
 }
 
 .prose blockquote strong {
-    @apply font-bold text-white;
-}
-
-.prose blockquote a {
-    @apply text-white;
+    @apply font-bold;
 }
 
 .prose code {

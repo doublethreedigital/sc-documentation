@@ -7,7 +7,7 @@ Simple Commerce has a couple pre-requisites. You'll need all of these installed 
 
 * PHP 7.4 or PHP 8.0
 * Statamic 3 - v3.0 and v3.1 both work fine
-* The [`php-intl` PHP extension](https://www.php.net/manual/en/book.intl.php) (it's used for currency formatting)
+* The `php-intl` extension for PHP - it's used for currency formatting
 
 While not strictly required, it's highly recommend you use SSL on your production site for security.
 

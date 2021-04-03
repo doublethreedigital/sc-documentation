@@ -1,15 +1,21 @@
+title: Docs
 sections:
   main:
+    display: Main
     fields:
       -
         handle: title
         field:
           type: text
           required: true
+          localizable: true
+          validate:
+            - required
       -
         handle: content
         field:
           type: markdown
+          display: Content
           localizable: true
   seo:
     display: SEO
@@ -17,6 +23,7 @@ sections:
       -
         import: seo
   sidebar:
+    display: Sidebar
     fields:
       -
         handle: slug
@@ -24,4 +31,14 @@ sections:
           type: slug
           required: true
           localizable: true
-title: Pages
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

@@ -34,5 +34,11 @@ return [
             'url' => '/v2.0/',
         ],
 
+        'marketing' => [
+            'name' => 'Marketing',
+            'locale' => 'en_US',
+            'url' => '/',
+        ],
+
     ],
 ];
