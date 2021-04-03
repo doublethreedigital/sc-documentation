@@ -96,7 +96,7 @@
                     </a>
                 {{ /if }}
 
-                <div class="md:{{ view:page_width ?? 'max-w-5xl' }} mx-auto py-8 flex relative mb-12">
+                <div class="{{ view:page_width ?? 'max-w-5xl' }} mx-auto py-8 flex relative mb-12">
                     <aside class="md:max-w-xs md:mr-16" :class="{ 'fixed top-0 right-0 bg-white z-50 p-4' : open, 'hidden md:block': !open }">
                         <div class="relative">
                             <ul class="mt-6 pb-6 sm:border-r sm:border-gray-100 pr-8">
