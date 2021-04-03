@@ -1,0 +1,15 @@
+title_separator: '|'
+site_name: 'Simple Commerce'
+json_ld_type: person
+person_name: 'Duncan McClean'
+breadcrumbs: true
+og_image: Statamic-Banner.jpg
+twitter_image: Statamic-Banner.jpg
+use_google_site_verification: false
+use_fathom: false
+use_cloudflare_web_analytics: false
+tracker_type: none
+anonymize_ip: true
+use_cookie_banner: false
+cookie_expiration_days: 365
+link_privacy_statement: none

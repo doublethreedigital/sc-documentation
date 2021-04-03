@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>{{ view:title ?? title }} - Simple Commerce Documentation</title>
         <link rel="stylesheet" href="{{ mix src="/css/site.css" }}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -28,25 +27,7 @@
         {{ /if }}
 
         <!-- Primary Meta Tags -->
-        <meta name="title" content="{{ view:title ?? title }} - Simple Commerce Documentation">
-        <meta name="description" content="{{ content | noparse | strip_tags | safe_truncate:200:... }}">
-        {{ if slug }}
-            <link rel="canonical" href="{{ canonical }}">
-        {{ /if }}
-
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="{{ current_url }}">
-        <meta property="og:title" content="{{ seo_title ?? title }} - Simple Commerce Documentation">
-        <meta property="og:description" content="{{ seo_description ?? content | noparse | strip_tags | safe_truncate:200:... }}">
-        <meta property="og:image" content="{{ config:app:url }}{{ seo_image ?? '/img/simple-commerce-banner.jpg' }}">
-
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="{{ current_url }}">
-        <meta property="twitter:title" content="{{ seo_title ?? title }} - Simple Commerce Documentation">
-        <meta property="twitter:description" content="{{ seo_description ?? content | noparse | strip_tags | safe_truncate:200:... }}">
-        <meta property="twitter:image" content="{{ config:app:url }}{{ seo_image ?? '/img/simple-commerce-banner.jpg' }}">
+        {{ partial:seo }}
 
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">

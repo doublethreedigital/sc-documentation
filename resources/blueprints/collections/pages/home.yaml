@@ -11,6 +11,11 @@ sections:
           required: true
           validate:
             - required
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
   sidebar:
     display: Sidebar
     fields:

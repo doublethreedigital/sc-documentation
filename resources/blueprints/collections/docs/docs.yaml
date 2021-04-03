@@ -21,37 +21,7 @@ sections:
     display: SEO
     fields:
       -
-        handle: seo_title
-        field:
-          input_type: text
-          display: 'SEO Title'
-          type: text
-          icon: text
-          width: 50
-          listable: hidden
-          localizable: true
-      -
-        handle: seo_image
-        field:
-          mode: grid
-          container: assets
-          restrict: false
-          allow_uploads: true
-          max_files: 1
-          display: 'SEO Image'
-          type: assets
-          icon: assets
-          width: 50
-          listable: hidden
-          localizable: true
-      -
-        handle: seo_description
-        field:
-          display: 'SEO Description'
-          type: textarea
-          icon: textarea
-          listable: hidden
-          localizable: true
+        import: seo
   sidebar:
     display: Sidebar
     fields:
