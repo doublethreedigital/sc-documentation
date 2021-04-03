@@ -15,8 +15,8 @@ module.exports = {
         extend: {
             colors: {
                 'sc-dark-blue': '#041B34',
-                'sc-dark-light': '#00CDE0',
-                'sc-dark-light-darker': '#00e4fa',
+                'sc-light-blue': '#00CDE0',
+                'sc-lighter-blue': '#00e4fa',
             },
             fontFamily: {
                 'sc': ['Exo', ...defaultTheme.fontFamily.sans]
