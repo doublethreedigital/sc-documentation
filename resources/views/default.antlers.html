@@ -7,3 +7,11 @@
 <article class="prose mx-auto">
     {{ content | toc:ids }}
 </article>
+
+<div class="mt-12 border-t py-3 flex items-center justify-between">
+    <span class="text-sm text-gray-600">Last updated {{ updated_at | relative }}</span>
+
+    <span class="text-sm text-sc-dark-light hover:text-sc-dark-light-darker font-medium">
+        <a href="{{ github_edit_url }}">Improve this page on GitHub!</a>
+    </span>
+</div>
