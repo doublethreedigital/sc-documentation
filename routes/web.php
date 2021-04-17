@@ -7,7 +7,7 @@ use Statamic\Statamic;
 
 Statamic::booted(function () {
     Route::name('latest-version.')->group(function () {
-        $latestVersion = Site::get('v2.2');
+        $latestVersion = Site::get('v2.3');
 
         Route::redirect('/home', $latestVersion->url());
         Route::redirect('/installation', $latestVersion->url().'/installation');
