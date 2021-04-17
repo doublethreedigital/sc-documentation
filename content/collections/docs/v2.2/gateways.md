@@ -6,7 +6,7 @@ Simple Commerce currently has built-in support for two popular payment providers
 
 If you need to use a payment provider that's not supported first-party, you can build your own.
 
-And if you need a gateway that we don't already support, it's easy enough to [build your own](/v2.2/extending/custom-gateway).
+And if you need a gateway that we don't already support, it's easy enough to [build your own](/latest/extending/custom-gateway).
 
 ## Configuration
 
@@ -38,7 +38,7 @@ You can enter any Credit Card number, CVV and Expiry Date and the gateway will a
 
 ## Stripe
 
-First, you'll need to add Stripe to your `simple-commerce.php` config file. You will also need to pass in a `key` and `secret` file. 
+First, you'll need to add Stripe to your `simple-commerce.php` config file. You will also need to pass in a `key` and `secret` file.
 
 You can obtain [your API keys](https://dashboard.stripe.com/test/apikeys) from the Stripe Dashboard.
 
@@ -100,7 +100,7 @@ Bearing in mind, you will need to use that inside of a `{{ sc:gateways }}` tag i
 
 ## Mollie
 
-First, you'll need to add Mollie to your `simple-commerce.php` config file. You will also need to pass in a `key` and `secret` file. 
+First, you'll need to add Mollie to your `simple-commerce.php` config file. You will also need to pass in a `key` and `secret` file.
 
 You can obtain your API keys from the Mollie Dashboard.
 
@@ -138,7 +138,7 @@ However, bear in mind that where-ever you use that tag, the customer will be red
 
 #### Handling Mollie's webhook
 
-The Mollie gateway has a webhook which is hit by Mollie whenever a payment is made. 
+The Mollie gateway has a webhook which is hit by Mollie whenever a payment is made.
 
 Simple Commerce will configure the webhook on Mollie's end. However, you'll need to add the webhook URL to your list of CSRF exceptions, found in `app/Http/Middleware/VerifyCsrfToken.php`.
 
@@ -154,6 +154,6 @@ When you're going through the payment flow in your development environment, you 
 
 On the return back to your site from Mollie, you can have customers redirected to seperate URLs, depending on whether the payment was successful or failed/cancelled.
 
-The `redirect` parameter on the `sc:checkout:mollie` tag will handle the successful payment redirects. 
+The `redirect` parameter on the `sc:checkout:mollie` tag will handle the successful payment redirects.
 
 Where as `error_redirect` will handle any other payment states.

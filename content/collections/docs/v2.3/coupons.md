@@ -12,4 +12,4 @@ Coupons can be configured to only work in certain conditions. Like if the value 
 
 ## Templating
 
-Review documentation of the ['coupon tag'](https://sc-docs.doublethree.digital/v2.3/tags/coupon-tag).
+Review documentation of the ['coupon tag'](https://sc-docs.doublethree.digital/latest/tags/coupon-tag).

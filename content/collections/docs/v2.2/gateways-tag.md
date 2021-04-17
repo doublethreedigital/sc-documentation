@@ -4,7 +4,7 @@ origin: bc911ab7-2954-48fc-ab01-fd889a39d812
 ---
 With the gateway tag, you can loop through and use a specific gateway. This tag is commonly used on checkout pages to display payment forms.
 
-This page has documentation on the tag itself but if you're looking for docs on displaying payment forms, head over to the [Gateway docs](/v2.2/gateways#templating).
+This page has documentation on the tag itself but if you're looking for docs on displaying payment forms, head over to the [Gateway docs](/latest/gateways#templating).
 
 ## Tags
 

@@ -38,7 +38,7 @@ For more documentation around events and event listeners, consider reading [the 
 
 ## Available events
 
-### CartCompleted 
+### CartCompleted
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\CartCompleted`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CartCompleted.php)
 
@@ -52,11 +52,11 @@ public function handle(CartCompleted $event)
 }
 ```
 
-### CartSaved 
+### CartSaved
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\CartSaved`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CartSaved.php)
 
-This event is fired when an order/cart has been saved. 
+This event is fired when an order/cart has been saved.
 
 ```php
 public function handle(CartSaved $event)
@@ -65,13 +65,13 @@ public function handle(CartSaved $event)
 }
 ```
 
-### CartUpdated 
+### CartUpdated
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\CartUpdated`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CartUpdated.php)
 
 **I'd recommend you use the `CartSaved` event instead. The `CartUpdated` will be deprecated in future versions.**
 
-This event is fired when an order/cart has been saved. 
+This event is fired when an order/cart has been saved.
 
 ```php
 public function handle(CartUpdated $event)
@@ -80,7 +80,7 @@ public function handle(CartUpdated $event)
 }
 ```
 
-### CouponRedeemed 
+### CouponRedeemed
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\CouponRedeemed`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CouponRedeemed.php)
 
@@ -106,7 +106,7 @@ public function handle(CustomerAddedToCart $event)
 }
 ```
 
-### PostCheckout 
+### PostCheckout
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\PostCheckout`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/PostCheckout.php)
 
@@ -119,7 +119,7 @@ public function handle(PostCheckout $event)
 }
 ```
 
-### PreCheckout 
+### PreCheckout
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\PreCheckout`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/PreCheckout.php)
 
@@ -145,11 +145,11 @@ public function handle(ReceiveGatewayWebhook $event)
 }
 ```
 
-### StockRunOut 
+### StockRunOut
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\StockRunOut`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/StockRunOut.php)
 
-This event is fired when the [stock](https://sc-docs.doublethree.digital/v2.3/stock) for a product has ran out. 
+This event is fired when the [stock](https://sc-docs.doublethree.digital/latest/stock) for a product has ran out.
 
 ```php
 public function handle(StockRunOut $event)
@@ -163,7 +163,7 @@ public function handle(StockRunOut $event)
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\StockRunningLow`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/StockRunningLow.php)
 
-This event is fired when the [stock](https://sc-docs.doublethree.digital/v2.3/stock) for a product is running low.
+This event is fired when the [stock](https://sc-docs.doublethree.digital/latest/stock) for a product is running low.
 
 ```php
 public function handle(StockRunningLow $event)

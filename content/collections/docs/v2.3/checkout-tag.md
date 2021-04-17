@@ -29,4 +29,4 @@ Like with the update cart tag, you can also pass information to the customer ent
 {{ /sc:checkout }}
 ```
 
-If you're using an off-site gateway, like Mollie, you can learn about the checkout process, [over here](/v2.3/gateways#offsite-gateways).
+If you're using an off-site gateway, like Mollie, you can learn about the checkout process, [over here](/latest/gateways#offsite-gateways).

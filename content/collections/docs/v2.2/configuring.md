@@ -8,7 +8,7 @@ Most of the available configuration options are documented alongside the feature
 
 ## Site configuration
 
-I've moved our documentation about configuring sites over to a new [Multi-site](/v2.2/multi-site) page.
+I've moved our documentation about configuring sites over to a new [Multi-site](/latest/multi-site) page.
 
 ## Collections & Taxonomies
 ```php

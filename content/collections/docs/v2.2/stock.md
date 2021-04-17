@@ -8,7 +8,7 @@ After that, you can populate your products with the correct amount of stock. The
 
 ## Events
 
-Simple Commerce will fire events when either your stock is [running low](https://sc-docs.doublethree.digital/v2.2/events#stockrunninglow) or if your [stock has ran out](https://sc-docs.doublethree.digital/v2.2/events#stockrunout) for one of your products. 
+Simple Commerce will fire events when either your stock is [running low](https://sc-docs.doublethree.digital/latest/events#stockrunninglow) or if your [stock has ran out](https://sc-docs.doublethree.digital/latest/events#stockrunout) for one of your products.
 
 You can configure the threshold for when you want to start dispatching the `StockRunningLow` event in your `simple-commerce.php` config.
 

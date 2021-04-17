@@ -50,7 +50,7 @@ There's tags for each of the different totals in a cart.
 
 ## Add Item to Cart
 
-This tag allows you to add a product/variant to your cart. It's a [form tag](/v2.3/tags#form-tags) so you need to provide a couple of parameters (form fields) when submitting:
+This tag allows you to add a product/variant to your cart. It's a [form tag](/latest/tags#form-tags) so you need to provide a couple of parameters (form fields) when submitting:
 
 * `product` - The ID of the product you want to add to the cart.
 * `variant` - If applicable, the key of the variant you wish to add to the cart. Bear in mind, you will also need to provide the `product` with this.
@@ -65,7 +65,7 @@ This tag allows you to add a product/variant to your cart. It's a [form tag](/v2
 
 ## Update Cart Item
 
-With this tag, you can update a specific item in your cart. It's a [form tag](/v2.3/tags#form-tags).
+With this tag, you can update a specific item in your cart. It's a [form tag](/latest/tags#form-tags).
 
 The tag itself requires an `item` parameter which should be the ID of the specfic cart item you wish to update. You may then provide the parameters you wish to update on the item as input fields, like the below example:
 
@@ -77,7 +77,7 @@ The tag itself requires an `item` parameter which should be the ID of the specfi
 
 ## Remove Cart Item
 
-This tag allows you to remove an item from the cart. It's a [form tag](/v2.3/tags#form-tags) and the only required parameter is on the tag itself: the `item` parameter should be the ID or the specific cart item you wish to remove from the cart.
+This tag allows you to remove an item from the cart. It's a [form tag](/latest/tags#form-tags) and the only required parameter is on the tag itself: the `item` parameter should be the ID or the specific cart item you wish to remove from the cart.
 
 ```handlebars
 {{ sc:cart:removeItem :item="id" }}

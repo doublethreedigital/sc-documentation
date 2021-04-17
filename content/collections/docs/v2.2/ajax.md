@@ -2,7 +2,7 @@
 id: ff5ff001-6490-4c64-93db-f927a033074a
 origin: 871bec5a-4c52-48c9-9f45-9800a40f33cd
 ---
-Normally, you can use Simple Commerce's [form tags](https://sc-docs.doublethree.digital/v2.2/tags#form-tags) to build HTML `<form>` elements to do actions, such as adding to the cart or submitting a user's payment information during checkout.
+Normally, you can use Simple Commerce's [form tags](https://sc-docs.doublethree.digital/latest/tags#form-tags) to build HTML `<form>` elements to do actions, such as adding to the cart or submitting a user's payment information during checkout.
 
 However, sometimes you may want to use AJAX instead of forms as you don't need to wait for a page refresh after submitting data.
 
@@ -10,7 +10,7 @@ Submitting via AJAX is totally possible, it just takes a little bit more effort 
 
 ## Endpoints
 
-Each of the [form tags](https://sc-docs.doublethree.digital/v2.2/tags#form-tags) point to different endpoints.
+Each of the [form tags](https://sc-docs.doublethree.digital/latest/tags#form-tags) point to different endpoints.
 
 The easiest way to figure out which endpoint you want to use in place of a form tag would be to use the form tag temporarily in your template and grab the outputted form `action`.
 
