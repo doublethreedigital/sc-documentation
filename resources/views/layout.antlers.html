@@ -38,6 +38,9 @@
 
         <!-- Docsearch -->
         <meta name="docsearch:version" content="{{ current_version_site:name }}" />
+
+        <!-- Preloads -->
+        {{ yield:preloads }}
     </head>
     <body>
         <div x-data="{ open: false }" x-cloak>
