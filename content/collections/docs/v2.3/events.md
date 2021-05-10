@@ -1,6 +1,6 @@
 ---
-title: Events
-id: 5ca7272b-da30-4033-a2f9-d1864ca5311e
+id: 26012503-fd9a-463a-9cde-c2e9a0d9816c
+origin: 5ca7272b-da30-4033-a2f9-d1864ca5311e
 ---
 Events can be useful if you need to listen out for when certain things in your application happen.
 
@@ -38,48 +38,6 @@ For more documentation around events and event listeners, consider reading [the 
 
 ## Available events
 
-### CartCompleted
-
-[**`DoubleThreeDigital\SimpleCommerce\Events\CartCompleted`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CartCompleted.php)
-
-This event is fired when an order/cart is complete and has been paid, usually after checking out.
-
-```php
-public function handle(CartCompleted $event)
-{
-	$event->cart;
-  	$event->order;
-}
-```
-
-### CartSaved
-
-[**`DoubleThreeDigital\SimpleCommerce\Events\CartSaved`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CartSaved.php)
-
-This event is fired when an order/cart has been saved.
-
-```php
-public function handle(CartSaved $event)
-{
-	$event->cart;
-}
-```
-
-### CartUpdated
-
-[**`DoubleThreeDigital\SimpleCommerce\Events\CartUpdated`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CartUpdated.php)
-
-**I'd recommend you use the `CartSaved` event instead. The `CartUpdated` will be deprecated in future versions.**
-
-This event is fired when an order/cart has been saved.
-
-```php
-public function handle(CartUpdated $event)
-{
-	$event->cart;
-}
-```
-
 ### CouponRedeemed
 
 [**`DoubleThreeDigital\SimpleCommerce\Events\CouponRedeemed`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CouponRedeemed.php)
@@ -93,16 +51,29 @@ public function handle(CouponRedeemed $event)
 }
 ```
 
-### CustomerAddedToCart
+### OrderPaid
 
-[**`DoubleThreeDigital\SimpleCommerce\Events\CustomerAddedToCart`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/CustomerAddedToCart.php)
+[**`DoubleThreeDigital\SimpleCommerce\Events\OrderPaid`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/OrderPaid.php)
 
-This event is fired when a customer is attached to a cart/order.
+This event is fired when an order has been marked as paid.
 
 ```php
-public function handle(CustomerAddedToCart $event)
+public function handle(OrderPaid $event)
 {
-	$event->cart;
+	$event->order;
+}
+```
+
+### OrderSaved
+
+[**`DoubleThreeDigital\SimpleCommerce\Events\OrderSaved`**](https://github.com/doublethreedigital/simple-commerce/blob/master/src/Events/OrderSaved.php)
+
+This event is fired when an order has been saved. This event will only be fired when an order is saved via Simple Commerce, not via the Control Panel.
+
+```php
+public function handle(OrderPaid $event)
+{
+	$event->order;
 }
 ```
 
@@ -115,7 +86,7 @@ This event is fired after the checkout process has been completed.
 ```php
 public function handle(PostCheckout $event)
 {
-	$event->data;
+	$event->order;
 }
 ```
 
@@ -128,7 +99,7 @@ This event is fired before the checkout process begins.
 ```php
 public function handle(PreCheckout $event)
 {
-	$event->data;
+	$event->order;
 }
 ```
 

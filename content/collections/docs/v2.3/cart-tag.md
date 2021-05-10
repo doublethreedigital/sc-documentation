@@ -1,6 +1,6 @@
 ---
-id: 604430b3-79e5-4e3f-ad0a-3bb07d6fe81e
-origin: 5fa3f4ee-5077-418f-9d07-95414d2544b4
+id: eb4f8e13-e3ee-402f-855b-e088174dd1f7
+origin: 604430b3-79e5-4e3f-ad0a-3bb07d6fe81e
 ---
 ## Cart Information
 
@@ -65,7 +65,7 @@ This tag allows you to add a product/variant to your cart. It's a [form tag](/la
 
 ## Update Cart Item
 
-With this tag, you can update a specific item in your cart. It's a [form tag](/v2.1/tags#form-tags).
+With this tag, you can update a specific item in your cart. It's a [form tag](/latest/tags#form-tags).
 
 The tag itself requires an `item` parameter which should be the ID of the specfic cart item you wish to update. You may then provide the parameters you wish to update on the item as input fields, like the below example:
 

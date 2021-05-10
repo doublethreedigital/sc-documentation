@@ -4,14 +4,14 @@ origin: e98d4e7b-3e63-4328-bacc-83ace3e2af42
 ---
 To help you integrate Simple Commerce into your Antlers templates, Simple Commerce provides various tags:
 
-* [Cart](/v2.2/tags/cart-tag)
-* [Checkout](/v2.2/tags/checkout-tag)
-* [Coupon](/v2.2/tags/coupon-tag)
-* [Customer](/v2.2/tags/customer-tag)
-* [Gateways](/v2.2/tags/gateways-tag)
-* [Shipping](/v2.2/tags/shipping-tag)
-* [Countries](/v2.2/tags/countries-tag)
-* [Currencies](/v2.2/tags/currencies-tag)
+* [Cart](/latest/tags/cart-tag)
+* [Checkout](/latest/tags/checkout-tag)
+* [Coupon](/latest/tags/coupon-tag)
+* [Customer](/latest/tags/customer-tag)
+* [Gateways](/latest/tags/gateways-tag)
+* [Shipping](/latest/tags/shipping-tag)
+* [Countries](/latest/tags/countries-tag)
+* [Currencies](/latest/tags/currencies-tag)
 
 ## Form Tags
 Some Simple Commerce tags output `<form>` elements that submit to Simple Commerce endpoints. There's a couple of optional parameters you can add to form tags.

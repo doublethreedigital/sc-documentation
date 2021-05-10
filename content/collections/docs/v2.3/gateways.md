@@ -1,6 +1,6 @@
 ---
-id: f0a001d6-ceef-4e5a-9b55-6783b81d8eea
-origin: b26a3fb4-9c34-4e6c-ae7d-b0e3efbc5f2e
+id: 6baf00a2-f2b1-4f1e-aedc-87f7a834e648
+origin: f0a001d6-ceef-4e5a-9b55-6783b81d8eea
 ---
 Simple Commerce currently has built-in support for two popular payment providers: Stripe and Mollie.
 
@@ -24,7 +24,7 @@ Gateways can be configured in your `config/simple-commerce.php` file, under the 
 */
 
 'gateways' => [
-    \DoubleThreeDigital\SimpleCommerce\Gateways\DummyGateway::class => [],
+    \DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\DummyGateway::class => [],
 ],
 ```
 
@@ -44,7 +44,7 @@ You can obtain [your API keys](https://dashboard.stripe.com/test/apikeys) from t
 
 ```php
 'gateways' => [
-	\DoubleThreeDigital\SimpleCommerce\Gateways\StripeGateway::class => [
+	\DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\StripeGateway::class => [
     	'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
@@ -108,7 +108,7 @@ You can obtain your API keys from the Mollie Dashboard.
 
 ```php
 'gateways' => [
-	\DoubleThreeDigital\SimpleCommerce\Gateways\MollieGateway::class => [
+	\DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\MollieGateway::class => [
     	'key' => env('MOLLIE_KEY'),
         'profile' => env('MOLLIE_PROFILE'),
     ],

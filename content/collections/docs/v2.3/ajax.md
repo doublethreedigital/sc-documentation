@@ -1,6 +1,6 @@
 ---
-id: ff5ff001-6490-4c64-93db-f927a033074a
-origin: 871bec5a-4c52-48c9-9f45-9800a40f33cd
+id: c66b20be-7510-499c-88c6-e92d8985669d
+origin: ff5ff001-6490-4c64-93db-f927a033074a
 ---
 Normally, you can use Simple Commerce's [form tags](https://sc-docs.doublethree.digital/latest/tags#form-tags) to build HTML `<form>` elements to do actions, such as adding to the cart or submitting a user's payment information during checkout.
 

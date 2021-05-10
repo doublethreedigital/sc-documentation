@@ -1,7 +1,7 @@
 {{ xml_header }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-{{ collection:docs site:is="v2.2" }}
+{{ collection:docs site:is="v2.3" }}
     <url>
         <loc>{{ config:app.url }}{{ if parent:slug !== 'home' && slug !== 'home' }}/{{ parent:slug }}{{ /if }}/{{ slug }}</loc>
         <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>

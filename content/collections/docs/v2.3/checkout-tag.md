@@ -1,6 +1,6 @@
 ---
-id: c230ecb7-dfcc-4d36-a5c9-0d14ca4f29dc
-origin: f5705e8d-4481-440e-99f5-3902bb77feaa
+id: 1ac63bc8-d8cb-4821-be59-bb60125f4815
+origin: c230ecb7-dfcc-4d36-a5c9-0d14ca4f29dc
 ---
 This tag allows you to checkout the cart. Inside the tag, you can use any of the data from your cart. The `redirect` parameter is recommended so you can redirect the customer to a success page when they're order has been confirmed.
 

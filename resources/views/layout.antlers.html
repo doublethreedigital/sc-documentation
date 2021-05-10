@@ -38,6 +38,9 @@
 
         <!-- Docsearch -->
         <meta name="docsearch:version" content="{{ current_version_site:name }}" />
+
+        <!-- Preloads -->
+        {{ yield:preloads }}
     </head>
     <body>
         <div x-data="{ open: false }" x-cloak>
@@ -66,7 +69,7 @@
 
                     {{ if view:marketing_mode }}
                         <div class="sm:hidden">
-                            <a class="text-white text-lg font-medium text-right" href="/v2.2">Go to Docs</a>
+                            <a class="text-white text-lg font-medium text-right" href="/v2.3">Go to Docs</a>
                         </div>
                     {{ else }}
                         <button class="focus:outline-none md:hidden" @click="open = !open">
@@ -90,7 +93,7 @@
             {{ if view:marketing_mode }}
                 {{ template_content }}
             {{ else }}
-                {{ if site:name !== 'v2.2' }}
+                {{ if site:name !== 'v2.3' }}
                     <a class="bg-sc-dark-light block w-full" href="/upgrade-guide">
                         <p class="text-white py-1 text-center text-sm font-semibold">You're viewing the documentation of an older Simple Commerce version. Consider upgrading to the latest for new features and bug fixes.</p>
                     </a>
