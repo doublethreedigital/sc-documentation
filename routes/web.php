@@ -16,7 +16,8 @@ Statamic::booted(function () {
         Route::redirect('/gateways', $latestVersion->url().'/gateways');
         Route::redirect('/shipping', $latestVersion->url().'/shipping');
         Route::redirect('/tags', $latestVersion->url().'/tags');
-        Route::redirect('/email', $latestVersion->url().'/email');
+        Route::redirect('/email', $latestVersion->url().'/notifications');
+        Route::redirect('/notifications', $latestVersion->url().'/notifications');
         Route::redirect('/how-it-works', $latestVersion->url().'/how-it-works');
         Route::redirect('/knowledge-base/version-control-strategies', $latestVersion->url().'/knowledge-base/version-control-strategies');
         Route::redirect('/extending', $latestVersion->url().'/knowledge-base/extending');
