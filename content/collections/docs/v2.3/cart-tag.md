@@ -48,6 +48,8 @@ There's tags for each of the different totals in a cart.
 * `{{ sc:cart:tax_total }}` - Returns the tax total of the cart.
 * `{{ sc:cart:coupon_total }}` - Returns the total amount saved from coupons.
 
+If you need the 'raw' value for any of these totals, meaning the integer, rather than the formatted currency amount, you can do this: `{{ sc:cart:raw_grand_total }}`
+
 ## Add Item to Cart
 
 This tag allows you to add a product/variant to your cart. It's a [form tag](/latest/tags#form-tags) so you need to provide a couple of parameters (form fields) when submitting:
