@@ -4,14 +4,14 @@ origin: c287f66a-4c75-4982-9507-11963473c61e
 ---
 To help you integrate Simple Commerce into your Antlers templates, Simple Commerce provides various tags:
 
-* [Cart](/latest/tags/cart-tag)
-* [Checkout](/latest/tags/checkout-tag)
-* [Coupon](/latest/tags/coupon-tag)
-* [Customer](/latest/tags/customer-tag)
-* [Gateways](/latest/tags/gateways-tag)
-* [Shipping](/latest/tags/shipping-tag)
-* [Countries](/latest/tags/countries-tag)
-* [Currencies](/latest/tags/currencies-tag)
+* [Cart](/v2.3/tags/cart-tag)
+* [Checkout](/v2.3/tags/checkout-tag)
+* [Coupon](/v2.3/tags/coupon-tag)
+* [Customer](/v2.3/tags/customer-tag)
+* [Gateways](/v2.3/tags/gateways-tag)
+* [Shipping](/v2.3/tags/shipping-tag)
+* [Countries](/v2.3/tags/countries-tag)
+* [Currencies](/v2.3/tags/currencies-tag)
 
 ## Form Tags
 Some Simple Commerce tags output `<form>` elements that submit to Simple Commerce endpoints. There's a couple of optional parameters you can add to form tags.
@@ -42,6 +42,8 @@ Like noted above, you can use the `request` parameter when creating form tags to
 
 Although you can specify the `request` parameter on any form tag, not all of them will actually use it. Here's a list of the forms that do:
 
+* `{{ sc:cart:addItem }}`
+* `{{ sc:cart:updateItem }}`
 * `{{ sc:cart:update }}`
 * `{{ sc:customer:update }}`
 * `{{ sc:checkout }}`
