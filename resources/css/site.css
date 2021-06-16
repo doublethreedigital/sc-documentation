@@ -1,10 +1,6 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
-
-@import "prism.css";
 
 .prose {
     max-width: auto!important;
@@ -88,4 +84,42 @@
 
 .algolia-autocomplete {
     @apply w-full;
+}
+
+/* Reset existing `pre` stuff just for Torchlight */
+.prose pre {
+    background-color: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Torchlight */
+pre {
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+}
+
+pre code.torchlight {
+    display: block;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+pre code.torchlight .line {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    margin-right: 1rem;
 }
