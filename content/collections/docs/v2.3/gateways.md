@@ -6,7 +6,7 @@ Simple Commerce currently has built-in support for two popular payment providers
 
 If you need to use a payment provider that's not supported first-party, you can build your own.
 
-And if you need a gateway that we don't already support, it's easy enough to [build your own](/latest/extending/custom-gateway).
+And if you need a gateway that we don't already support, it's easy enough to [build your own](/v2.3/extending/custom-gateway).
 
 ## Configuration
 
