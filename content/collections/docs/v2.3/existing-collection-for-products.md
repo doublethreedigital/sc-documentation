@@ -59,7 +59,7 @@ Now that we're using one of your existing collections to hold your products, you
 
 Simple Commerce provides its own 'Money' fieldtype which should be used for this field. It's available in the blueprint builder.
 
-TODO
+![GIF of adding Price field to blueprint](/assets/add-price-field-to-blueprint-compressed.gif)
 
 > This field will need to have the handle of `price` or else Simple Commerce won't be able to find it.
 
