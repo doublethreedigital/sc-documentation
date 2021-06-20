@@ -17,7 +17,7 @@ Here's a really simple guide of how to use an existing collection for Simple Com
 
 If you've not already, you'll need to install Simple Commerce. There's documentation on doing that [right over here](https://sc-docs.doublethree.digital/v2.3/installation#standard-install).
 
-## 2. Configuration (and delete 'Products Collection')
+## 2. Configuration
 
 Once installed, you'll need to tell Simple Commerce which collection you want to use as your 'products' collection. This is easily changed in your config file.
 
@@ -41,14 +41,10 @@ return [
     */
 
     'content' => [
-        ...
-
         'products' => [
             'driver' => \DoubleThreeDigital\SimpleCommerce\Products\Product::class,
             'collection' => 'products', // handle of your collection
         ],
-
-		...
     ],
 ];
 ```
