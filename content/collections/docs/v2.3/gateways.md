@@ -68,7 +68,7 @@ A rough example of a Stripe Elements implementation is provided below.
 </div>
 
 <input id="stripePaymentMethod" type="hidden" name="payment_method">
-<input type="hidden" name="gateway" value="DoubleThreeDigital\SimpleCommerce\Gateways\StripeGateway">
+<input type="hidden" name="gateway" value="DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\StripeGateway">
 
 <script src="https://js.stripe.com/v3/"></script>
 <script>
