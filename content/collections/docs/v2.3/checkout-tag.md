@@ -17,9 +17,9 @@ Like with the update cart tag, you can also pass information to the customer ent
     <input type="text" name="gift_note" placeholder="Gift Note">
 
     <select name="gateway">
-      {{ simple-commerce:gateways }}
+      {{ sc:gateways }}
         <option value="{{ class }}">{{ name }}</option>
-      {{ /simple-commerce:gateways }}
+      {{ /sc:gateways }}
     </select>
 
     <!-- deal with your gateway stuff -->
