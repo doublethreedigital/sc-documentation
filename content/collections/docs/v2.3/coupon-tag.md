@@ -7,7 +7,7 @@ This tag lets you get the data for the coupon, if the customer has redeemed one 
 
 ```
 {{ sc:coupon }}
-  Current coupon: {{ slug }}
+  Currently redeemed: {{ slug }}
 {{ /sc:coupon }}
 ```
 
@@ -16,7 +16,7 @@ This tag lets you check whether or not the customer has already redeemed a coupo
 
 ```
 {{ if {sc:coupon:has} === true }}
-  You've redeemed a coupon.
+  Coupon Discount: {{ sc:cart:couponTotal }}
 {{ /if }}
 ```
 
